@@ -58,6 +58,9 @@ section{position:relative}
 .nav a[aria-current="true"]::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;background:var(--yellow);transform:skewX(var(--skew))}
 .top-r{display:flex;align-items:center;gap:10px}
 .top .btn{min-height:42px;font-size:15px;padding:0 16px}
+.logo-name{white-space:nowrap}
+.tbtn .z{display:none}
+@media(max-width:389px){.tbtn .n{display:none}.tbtn .z{display:inline-block}.top .wrap{gap:8px}}
 .burger{width:44px;height:44px;border:0;background:none;cursor:pointer;position:relative;padding:0}
 .burger i{position:absolute;left:10px;right:10px;height:3px;background:var(--navy);transition:transform .25s,opacity .2s}
 .burger i:nth-child(1){top:14px}.burger i:nth-child(2){top:21px;right:16px}.burger i:nth-child(3){top:28px}
@@ -285,7 +288,7 @@ section{position:relative}
       <a href="#kontakt">Kontakt</a>
     </nav>
     <div class="top-r">
-      <a class="btn" href="tel:+48667360360"><span>667 360 360</span></a>
+      <a class="btn tbtn" href="tel:+48667360360" aria-label="Zadzwoń: 667 360 360"><span class="n">667 360 360</span><span class="z">Zadzwoń</span></a>
       <button class="burger" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mnav"><i></i><i></i><i></i></button>
     </div>
   </div>
